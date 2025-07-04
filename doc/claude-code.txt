@@ -1,0 +1,23 @@
+*claude-code.txt*  Claude Code Vim plugin
+
+INTRODUCTION~
+  Claude Code integrates the Claude CLI with Vim.
+
+COMMANDS~
+  :ClaudeCode          Toggle Claude terminal
+  :ClaudeCodeContinue  Continue previous session
+  :ClaudeCodeResume    Choose session
+  :ClaudeCodeVerbose   Verbose mode
+  :ClaudeCodeSelect    Send selected line range to Claude terminal
+
+CONFIGURATION~
+  See README.md for configuration examples.
+  The `window.enter_insert` option (default: 1) keeps the terminal in
+  insert mode whenever you focus the buffer again by feeding `i<BS>` on
+  each focus event.
+
+TROUBLESHOOTING~
+  If the AutoComplPop plugin inserts text like `=feedPopup()` when you
+  return to the Claude terminal window, the plugin automatically
+  disables that mapping for the terminal buffer.
+
