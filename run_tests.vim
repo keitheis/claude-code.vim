@@ -1,3 +1,6 @@
+" Set up runtime path to include the plugin directory
+let &runtimepath = expand('<sfile>:p:h') . ',' . &runtimepath
+
 source plugin/claude-code.vim
 source test/test_claude.vim
 call Test_ClaudeSetup()

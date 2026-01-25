@@ -1,3 +1,5 @@
+scriptencoding utf-8
+
 function! claude#acp#maybe_disable() abort
   let l:map = maparg('i', 'n')
   if l:map =~ 'feedPopup'
